@@ -1,0 +1,80 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font for a modern look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Nice gradient background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Container for the content */
+.container {
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    padding: 40px 60px;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Softer, larger shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #e0f7fa; /* Lighter blue for heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 10px; /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4); /* Button shadow */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6); /* Enhanced shadow on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Press down effect */
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Message display area */
+#message {
+    margin-top: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #a7ffeb; /* Light teal for messages */
+}
